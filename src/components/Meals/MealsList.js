@@ -1,13 +1,13 @@
 import React from "react";
-import classes from "./AvailableMeals.module.css";
+import classes from "./MealsList.module.css";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
-import DUMMY_MEALS from "./dummy-meals";
+import DUMMY_MEALS from "../data/dummy-meals";
 
-const AvailableMeals = () => {
+const MealsList = () => {
   return (
     <section>
-      <Card className={classes.availableMeals}>
+      <Card className={classes.mealsList}>
         <ul>
           {DUMMY_MEALS.map((meal) => (
             <MealItem key={meal.id} meal={meal} />
@@ -18,4 +18,4 @@ const AvailableMeals = () => {
   );
 };
 
-export default AvailableMeals;
+export default MealsList;

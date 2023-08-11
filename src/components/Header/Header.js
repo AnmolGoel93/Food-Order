@@ -3,18 +3,22 @@ import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 import HeaderBackgroundImage from "./HeaderBackgroundImage";
 
-const Header = () => {
-  const carButtonClickHandler = () => {};
+const Header = ({ itemsQuantity, onClick }) => {
   return (
     <>
       <header className={classes.header}>
+        {/* Title */}
         <h1>Meals</h1>
+
+        {/* Cart Button */}
         <HeaderCartButton
           title={"Your Cart"}
-          onCartButtonClick={carButtonClickHandler}
-          itemsCount={0}
+          onClick={() => onClick()}
+          itemsCount={itemsQuantity}
         />
       </header>
+
+      {/* Background Image */}
       <HeaderBackgroundImage />
     </>
   );

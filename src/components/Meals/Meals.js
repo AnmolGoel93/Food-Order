@@ -1,12 +1,12 @@
 import React from "react";
-import AvailableMeals from "./AvailableMeals";
+import MealsList from "./MealsList";
 import MealsSummary from "./MealsSummary";
 
 const Meals = () => {
   return (
     <>
       <MealsSummary />
-      <AvailableMeals />
+      <MealsList />
     </>
   );
 };
