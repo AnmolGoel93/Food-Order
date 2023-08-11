@@ -5,7 +5,7 @@ import mealsImage from "../../assets/meals.jpg";
 const HeaderBackgroundImage = () => {
   return (
     <div className={classes["main-image"]}>
-      <img src={mealsImage} alt="Meals Image"></img>
+      <img src={mealsImage} alt="Meals"></img>
     </div>
   );
 };
