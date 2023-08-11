@@ -1,0 +1,26 @@
+.meal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin: 1rem;
+}
+
+.addButton {
+  font: inherit;
+  background-color: #8a2b06;
+  color: white;
+  border: 1px solid #8a2b06;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #641e03;
+  border-color: #641e03;
+}

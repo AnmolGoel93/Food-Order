@@ -1,0 +1,12 @@
+.availableMeals {
+  width: 90%;
+  max-width: 60rem;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.availableMeals ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
