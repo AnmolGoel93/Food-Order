@@ -11,11 +11,7 @@ const Header = ({ itemsQuantity, onClick }) => {
         <h1>Meals</h1>
 
         {/* Cart Button */}
-        <HeaderCartButton
-          title={"Your Cart"}
-          onClick={() => onClick()}
-          itemsCount={itemsQuantity}
-        />
+        <HeaderCartButton title={"Your Cart"} onClick={() => onClick()} />
       </header>
 
       {/* Background Image */}
